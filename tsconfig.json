@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "noImplicitAny": true,
+    "noImplicitThis": false,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "isolatedModules": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./*"],
+      "*": ["*", "node_modules/playwright/types/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/playwright/types"
+    ],
+  },
+}
